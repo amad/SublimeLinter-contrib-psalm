@@ -1,0 +1,11 @@
+language: python
+python:
+  - "3.3"
+# command to install dependencies
+install:
+  - pip install flake8
+  - pip install pydocstyle
+# command to run tests
+script:
+  - flake8 linter.py --max-line-length=120
+  - pydocstyle linter.py --add-ignore=D202
