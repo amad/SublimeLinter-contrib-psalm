@@ -19,7 +19,7 @@ Please use [Package Control][pc] to install the linter plugin. This will ensure 
 Make sure [vimeo/psalm][psalm] is installed [globally][composer-global] and ensure composer bin directory is already pushed into PATH.
 
 ```
-composer global req vimeo/psalm
+composer global require vimeo/psalm
 ```
 
 > Note: In case you want to use the `vendor/bin` directory, you should update the linter configuration as well.
@@ -27,7 +27,7 @@ composer global req vimeo/psalm
 The psalm config file (`psalm.xml`) is required in the project's root directory.
 You can create it using the following command:
 ```
-psalm --init
+psalm --init [source_dir] [level]
 ```
 
 
